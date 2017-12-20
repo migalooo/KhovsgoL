@@ -9,7 +9,7 @@ A **Multiple Entries Scaffold** for init a muti-pages project, depend on [webpac
 
 ### Bundle Workflow
 
-![Image_Workflow](./markdown/images/workflow.svg)
+![Image_Workflow](./markdown/images/workflow.jpg)
 
 ### Install
 You may use **npm install** in the same way.

@@ -1,8 +1,7 @@
 ![Image Title](./markdown/images/title.png)
 
-"The study of the soul, that is to say the study of my own self."
+*"The study of the soul, that is to say the study of my own self."*
 
----
 
 ### Introduction
 
@@ -10,7 +9,7 @@ A **Multiple Entries Scaffold** for init a muti-pages project, depend on [webpac
 
 ### Bundle Workflow
 
-![Image_Workflow](./markdown/images/workflow.svg?sanitize=true)
+![Image_Workflow](./markdown/images/workflow.svg)
 
 ### Install
 You may use **npm install** in the same way.

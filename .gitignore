@@ -5,6 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .DS_Store
-.*.swp
-.*.swn
-.*.swo
+.tern-project
+.*swp
+.*swn
+.*swo

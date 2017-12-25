@@ -40,7 +40,7 @@ rm(path.join(config.assetsRoot, config.assetsSubDirectory), err => {
       process.exit(1)
     }
 
-    console.log(chalk.cyan('  Build complete.\n'))
+    console.log(chalk.cyan(`  ${config.env.replace(/^\w/, w => w.toUpperCase())} build complete.\n`))
   })
 })
 

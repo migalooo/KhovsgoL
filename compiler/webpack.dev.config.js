@@ -5,6 +5,7 @@ const webpack = require('webpack')
 const portfinder = require('portfinder')
 const webpackMerge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const addMutiPageEntries = require('./utils/addMutiPageEntries.js')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
@@ -46,9 +47,16 @@ const devConfig = webpackMerge(webpackCommon(config.dev), {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
     new webpack.NoEmitOnErrorsPlugin(),
+    // copy custom static assets
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        to: config.staticSubDirectory,
+        ignore: ['.*']
+      }
+    ])
   ]
 })
-
 
 // Add muti page HtmlWebpackPlugin config
 const {entry, folderNames, inactiveNames} = addMutiPageEntries(config.dev)
@@ -63,14 +71,6 @@ folderNames.forEach((folderName, i) => {
     }
   ))
 })
-
-// Enable ExtractTextPlugin in pre and production envrionment
-// devConfig.plugins.push(
-//   new ExtractTextPlugin({
-//     filename: '[name].[contenthash].css',
-//     allChunks: false,
-//   })
-// )
 
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port

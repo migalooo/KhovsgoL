@@ -11,6 +11,7 @@ module.exports = {
     // path
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
+    staticSubDirectory: 'static',
 		// proxy
 		proxyTable: {},
     // dev server settings 
@@ -44,6 +45,7 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
     assetsPublic: '/',
+    staticSubDirectory: 'static',
 		// Js source map
 		sourceMap: true,
     devtool: '#source-map',
@@ -71,6 +73,7 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
     assetsPublic: '/',
+    staticSubDirectory: 'static',
 		// Js source map
 		sourceMap: false,
     devtool: '#source-map',

@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 2304.9 856" enable-background="new 0 0 2304.9 856" xml:space="preserve">
+<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 1901.4 856" xml:space="preserve">
 <g>
-	<g>
-		<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="617.4" y1="321.8" x2="617.4" y2="327.8"/>
-		
-			<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.4479,12.4479" x1="617.4" y1="340.2" x2="617.4" y2="632.8"/>
-		<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="617.4" y1="639" x2="617.4" y2="645"/>
-	</g>
+	<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="617.4" y1="321.8" x2="617.4" y2="327.8"/>
+	
+		<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.4479,12.4479" x1="617.4" y1="340.2" x2="617.4" y2="632.8"/>
+	<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="617.4" y1="639" x2="617.4" y2="645"/>
 </g>
 <g>
-	<g>
-		<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="1055.4" y1="321.7" x2="1055.4" y2="327.7"/>
-		
-			<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.452,12.452" x1="1055.4" y1="340.2" x2="1055.4" y2="632.8"/>
-		<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="1055.4" y1="639" x2="1055.4" y2="645"/>
-	</g>
+	<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="1055.4" y1="321.7" x2="1055.4" y2="327.7"/>
+	
+		<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.452,12.452" x1="1055.4" y1="340.2" x2="1055.4" y2="632.8"/>
+	<line fill="none" stroke="#E5E5E5" stroke-width="2" stroke-miterlimit="10" x1="1055.4" y1="639" x2="1055.4" y2="645"/>
 </g>
 <path fill="#F4F4F4" d="M939.7,496.7H724.1c-5.1,0-9.2-4.1-9.2-9.2V436c0-5.1,4.1-9.2,9.2-9.2h215.5c5.1,0,9.2,4.1,9.2,9.2v51.5
 	C948.9,492.6,944.8,496.7,939.7,496.7z"/>
@@ -93,7 +89,20 @@
 <text transform="matrix(1 0 0 1 1385.6167 339.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">css</text>
 <text transform="matrix(1 0 0 1 1385.6167 463.606)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">page1.hash.js</text>
 <text transform="matrix(1 0 0 1 1385.6167 505.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">page2.hash.js</text>
-<text transform="matrix(1 0 0 1 1385.6167 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">vendor.hash.js</text>
+<text transform="matrix(1 0 0 1 1385.6167 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">v</text>
+<text transform="matrix(1 0 0 1 1397.6167 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">e</text>
+<text transform="matrix(1 0 0 1 1410.9644 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">n</text>
+<text transform="matrix(1 0 0 1 1424.312 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">d</text>
+<text transform="matrix(1 0 0 1 1437.6597 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">o</text>
+<text transform="matrix(1 0 0 1 1451.0073 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">r</text>
+<text transform="matrix(1 0 0 1 1457.6753 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">.</text>
+<text transform="matrix(1 0 0 1 1464.3433 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">h</text>
+<text transform="matrix(1 0 0 1 1477.6909 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">a</text>
+<text transform="matrix(1 0 0 1 1491.0386 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">s</text>
+<text transform="matrix(1 0 0 1 1503.0386 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">h</text>
+<text transform="matrix(1 0 0 1 1516.3862 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">.</text>
+<text transform="matrix(1 0 0 1 1523.0542 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">j</text>
+<text transform="matrix(1 0 0 1 1528.3862 379.6063)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">s</text>
 <text transform="matrix(1 0 0 1 1385.6167 421.6064)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">manifest.hash.js</text>
 <rect x="1359.2" y="255.5" fill="#BFBFBF" width="13" height="5"/>
 <rect x="1359.2" y="290.5" fill="#BFBFBF" width="13" height="5"/>
@@ -140,7 +149,7 @@
 <text transform="matrix(1 0 0 1 714.9875 549.7812)" fill="#0087BC" font-family="'ArialMT'" font-size="24px">html.hbs</text>
 <text transform="matrix(1 0 0 1 735.9827 603.2753)" fill="#7C7C7C" font-family="'ArialMT'" font-size="24px">insert</text>
 <g>
-	<g enable-background="new    ">
+	<g>
 		<path fill="#707070" d="M28.8,69.9l-9.9,4.5l-1.1-2.3l7.9-3.4v-0.1l-7.9-3.4l1.1-2.3l9.9,4.6V69.9z"/>
 		<path fill="#707070" d="M47.1,71.1c0,0.6-0.2,1.2-0.5,1.7s-0.8,0.9-1.4,1.2c-0.6,0.3-1.3,0.5-2.1,0.7s-1.7,0.2-2.5,0.2
 			c-0.6,0-1.1,0-1.5,0s-0.8,0-0.9,0l-0.3-2.6c0.2,0,0.5,0,0.9,0s0.9,0,1.4,0c0.3,0,0.6,0,0.9,0s0.6-0.1,0.9-0.2
@@ -160,7 +169,7 @@
 	</g>
 </g>
 <g>
-	<g enable-background="new    ">
+	<g>
 		<path fill="#707070" d="M1091.8,69.9l-9.9,4.5l-1.1-2.3l7.9-3.4v-0.1l-7.9-3.4l1.1-2.3l9.9,4.6V69.9z"/>
 		<path fill="#707070" d="M1112.5,74.8c-0.2,0-0.5,0-0.8,0s-0.7,0-0.9,0c-1.7,0-3-0.1-4-0.2s-1.9-0.4-2.7-0.8
 			c-1.1-0.5-1.9-1.2-2.5-2.1s-0.8-1.8-0.8-2.9c0-1.1,0.3-2.1,0.9-3s1.5-1.6,2.8-2.1c0.6-0.3,1.4-0.5,2.2-0.6s1.6-0.2,2.3-0.3l0-5.3
@@ -189,7 +198,7 @@
 <g>
 	<rect x="1009.9" y="496.7" fill="#FFFFFF" width="116" height="57"/>
 	<g>
-		<g enable-background="new    ">
+		<g>
 			<path fill="#282828" d="M1024.2,522h1.4l0.2,2.8h0c1-1.9,2.6-3,4.4-3c0.7,0,1.4,0.1,2,0.5l-0.4,1.7c-0.7-0.3-1.1-0.4-1.8-0.4
 				c-1.5,0-2.9,0.9-4.1,3.3v6.8h-1.7V522z"/>
 			<path fill="#282828" d="M1034.9,527.8c0-3.8,2.4-6.1,5.1-6.1c2.9,0,4.5,2.2,4.5,5.5c0,0.5,0,0.9-0.1,1.2h-8.4v-1.5h7.4l-0.4,0.6
@@ -215,25 +224,23 @@
 <rect x="556.9" y="496.7" fill="#FFFFFF" width="96.8" height="57"/>
 <g>
 	<g>
-		<g>
-			<path fill="#282828" d="M575.4,532.2l0.8-1.3c1.1,1,2.5,1.6,4.3,1.6c1.7,0,2.5-0.8,2.5-1.8c0-0.9-0.4-1.5-3.1-2.2
-				c-2.6-0.6-3.9-1.7-3.9-3.4c0-1.9,1.4-3.3,4.1-3.3c1.5,0,3,0.7,4,1.5l-0.8,1.3c-0.9-0.7-2.1-1.2-3.3-1.2c-1.7,0-2.3,0.8-2.3,1.7
-				c0,1,0.9,1.4,2.9,1.9c3.3,0.8,4.1,1.8,4.1,3.6c0,1.9-1.6,3.5-4.4,3.5C578.3,534,576.6,533.1,575.4,532.2z"/>
-			<path fill="#282828" d="M587.4,527.9c0-3.9,2.3-6.1,4.9-6.1s4.9,2.2,4.9,6.1c0,3.9-2.3,6.1-4.9,6.1S587.4,531.8,587.4,527.9z
-				 M595.5,527.9c0-2.7-1.3-4.5-3.2-4.5s-3.2,1.8-3.2,4.5c0,2.7,1.3,4.4,3.2,4.4S595.5,530.6,595.5,527.9z"/>
-			<path fill="#282828" d="M600.1,529.3V522h1.7v7c0,2.2,0.7,3.2,2.3,3.2c1.1,0,2-0.6,3.1-2.1V522h1.7v11.7h-1.4l-0.1-2h-0.1
-				c-1,1.4-2.2,2.3-3.7,2.3C601.1,534,600.1,532.4,600.1,529.3z"/>
-			<path fill="#282828" d="M613.7,522h1.4l0.2,2.8h0c1-1.9,2.6-3,4.4-3c0.7,0,1.4,0.1,2,0.5l-0.4,1.7c-0.7-0.3-1.1-0.4-1.8-0.4
-				c-1.5,0-2.9,0.9-4.1,3.3v6.8h-1.7V522z"/>
-			<path fill="#282828" d="M624.7,527.9c0-3.9,2.5-6.1,5.5-6.1c1.6,0,2.8,0.8,3.6,1.7l-0.8,1.3c-0.8-0.8-1.7-1.3-2.7-1.3
-				c-2.3,0-3.9,1.8-3.9,4.5c0,2.7,1.6,4.4,3.8,4.4c1.2,0,2.3-0.6,3.1-1.5l0.8,1.3c-1.1,1.2-2.5,1.8-3.9,1.8
-				C627,534,624.7,531.8,624.7,527.9z"/>
-			<path fill="#282828" d="M636.7,527.8c0-3.8,2.4-6.1,5.1-6.1c2.9,0,4.5,2.2,4.5,5.5c0,0.5,0,0.9-0.1,1.2h-8.4v-1.5h7.4l-0.4,0.6
-				c0-2.8-1.2-4.1-3-4.1c-1.8,0-3.4,1.6-3.4,4.5c0,3,1.7,4.6,3.9,4.6c1.2,0,2.1-0.4,3-1.1l0.6,1.3c-1,0.8-2.3,1.4-3.8,1.4
-				C639.1,534,636.7,531.7,636.7,527.8z"/>
-			<path fill="#282828" d="M662.1,530.6l6.1-4.8v-0.1l-6.1-4.8v-1.9l7.6,6v1.5l-7.6,6V530.6z"/>
-			<path fill="#282828" d="M674.4,530.6l6.1-4.8v-0.1l-6.1-4.8v-1.9l7.6,6v1.5l-7.6,6V530.6z"/>
-		</g>
+		<path fill="#282828" d="M575.4,532.2l0.8-1.3c1.1,1,2.5,1.6,4.3,1.6c1.7,0,2.5-0.8,2.5-1.8c0-0.9-0.4-1.5-3.1-2.2
+			c-2.6-0.6-3.9-1.7-3.9-3.4c0-1.9,1.4-3.3,4.1-3.3c1.5,0,3,0.7,4,1.5l-0.8,1.3c-0.9-0.7-2.1-1.2-3.3-1.2c-1.7,0-2.3,0.8-2.3,1.7
+			c0,1,0.9,1.4,2.9,1.9c3.3,0.8,4.1,1.8,4.1,3.6c0,1.9-1.6,3.5-4.4,3.5C578.3,534,576.6,533.1,575.4,532.2z"/>
+		<path fill="#282828" d="M587.4,527.9c0-3.9,2.3-6.1,4.9-6.1s4.9,2.2,4.9,6.1c0,3.9-2.3,6.1-4.9,6.1S587.4,531.8,587.4,527.9z
+			 M595.5,527.9c0-2.7-1.3-4.5-3.2-4.5s-3.2,1.8-3.2,4.5c0,2.7,1.3,4.4,3.2,4.4S595.5,530.6,595.5,527.9z"/>
+		<path fill="#282828" d="M600.1,529.3V522h1.7v7c0,2.2,0.7,3.2,2.3,3.2c1.1,0,2-0.6,3.1-2.1V522h1.7v11.7h-1.4l-0.1-2h-0.1
+			c-1,1.4-2.2,2.3-3.7,2.3C601.1,534,600.1,532.4,600.1,529.3z"/>
+		<path fill="#282828" d="M613.7,522h1.4l0.2,2.8h0c1-1.9,2.6-3,4.4-3c0.7,0,1.4,0.1,2,0.5l-0.4,1.7c-0.7-0.3-1.1-0.4-1.8-0.4
+			c-1.5,0-2.9,0.9-4.1,3.3v6.8h-1.7V522z"/>
+		<path fill="#282828" d="M624.7,527.9c0-3.9,2.5-6.1,5.5-6.1c1.6,0,2.8,0.8,3.6,1.7l-0.8,1.3c-0.8-0.8-1.7-1.3-2.7-1.3
+			c-2.3,0-3.9,1.8-3.9,4.5c0,2.7,1.6,4.4,3.8,4.4c1.2,0,2.3-0.6,3.1-1.5l0.8,1.3c-1.1,1.2-2.5,1.8-3.9,1.8
+			C627,534,624.7,531.8,624.7,527.9z"/>
+		<path fill="#282828" d="M636.7,527.8c0-3.8,2.4-6.1,5.1-6.1c2.9,0,4.5,2.2,4.5,5.5c0,0.5,0,0.9-0.1,1.2h-8.4v-1.5h7.4l-0.4,0.6
+			c0-2.8-1.2-4.1-3-4.1c-1.8,0-3.4,1.6-3.4,4.5c0,3,1.7,4.6,3.9,4.6c1.2,0,2.1-0.4,3-1.1l0.6,1.3c-1,0.8-2.3,1.4-3.8,1.4
+			C639.1,534,636.7,531.7,636.7,527.8z"/>
+		<path fill="#282828" d="M662.1,530.6l6.1-4.8v-0.1l-6.1-4.8v-1.9l7.6,6v1.5l-7.6,6V530.6z"/>
+		<path fill="#282828" d="M674.4,530.6l6.1-4.8v-0.1l-6.1-4.8v-1.9l7.6,6v1.5l-7.6,6V530.6z"/>
 	</g>
 </g>
 </svg>

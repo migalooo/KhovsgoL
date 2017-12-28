@@ -13,10 +13,11 @@
 The **Packing Structured** is figured as follows:
 ![Image_Workflow](./markdown/images/workflow.svg)
 
-## How to 
+## Install
 Init a project with the following commands:
-`$ yarn install`
-Usage
+- `$ yarn install`
+
+#### Usage
 - Developing use with hot reload
  `$ yarn run dev` 
 - Preproduction use with source map

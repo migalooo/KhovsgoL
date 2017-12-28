@@ -6,14 +6,14 @@ module.exports = {
    * Development Envrionment
    */
   dev: {
-		// envrionment
-		env: 'development',
+    // envrionment
+    env: 'development',
     // path
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
     staticSubDirectory: 'static', // copy dirname in assetsRoot for libraries in "/static/" folder
-		// proxy
-		proxyTable: {},
+    // proxy
+    proxyTable: {},
     // dev server settings 
     host: 'localhost', // overwritten process.env.HOST
     port: 8080, // overwritten process.env.PORT
@@ -22,8 +22,8 @@ module.exports = {
     notifyOnErrors: true, // system alert tips
     showFullErrors: false, // show errors detail
     poll: false, // long poll watching file change
-		// Js source map
-		devtool: 'eval-source-map',
+    // Js source map
+    devtool: 'eval-source-map',
     // style source map
     cssSourceMap: true, 
     // use postCss
@@ -39,15 +39,15 @@ module.exports = {
    * Preproduction Envrionment
    */
   prebuild: {
-		// envrionment
-		env: 'preproduction',
+    // envrionment
+    env: 'preproduction',
     // path
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
     assetsPublic: '/',
     staticSubDirectory: 'static',
-		// Js source map
-		sourceMap: true,
+    // Js source map
+    sourceMap: true,
     devtool: '#source-map',
     // use postCss
     usePostCSS: true,
@@ -67,15 +67,15 @@ module.exports = {
    * Production Envrionment
    */
   build: {
-		// envrionment
-		env: 'production',
+    // envrionment
+    env: 'production',
     // path
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
     assetsPublic: '/',
     staticSubDirectory: 'static',
-		// Js source map
-		sourceMap: false,
+    // Js source map
+    sourceMap: false,
     devtool: '#source-map',
     // use postCss
     usePostCSS: true,

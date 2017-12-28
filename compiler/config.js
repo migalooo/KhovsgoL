@@ -11,7 +11,7 @@ module.exports = {
     // path
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'assets',
-    staticSubDirectory: 'static',
+    staticSubDirectory: 'static', // copy dirname in assetsRoot for libraries in "/static/" folder
 		// proxy
 		proxyTable: {},
     // dev server settings 

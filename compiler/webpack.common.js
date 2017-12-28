@@ -1,4 +1,5 @@
 'use strict'
+const fs = require('fs')
 const path = require('path')
 const { addStyleLoaders } = require('./utils/addStyleLoaders.js')
 
@@ -15,6 +16,7 @@ module.exports = function webpackCommon(ENV) {
         '>': resolve('src'),
       }
     },
+    externals: {},
     devtool: ENV.devtool,
     module: {
       rules: [
@@ -22,7 +24,7 @@ module.exports = function webpackCommon(ENV) {
           test: /\.hbs$/,
           loader: 'handlebars-loader',
           options: {
-            partialDirs: resolve('src/templates') 
+            partialDirs: resolve('src/snippets'),
           }
         },
         {
@@ -86,6 +88,12 @@ module.exports = function webpackCommon(ENV) {
     publicPath: ENV.assetsPublic
   })
   commonConfig.module.rules.unshift(...styleLoaders.rules)
+
+  // External config for global import
+  if (fs.existsSync(path.resolve(__dirname, './externalsConfig.js'))) {
+    const externals = require('./externalsConfig.js') 
+    Object.assign(commonConfig.externals, externals)
+  }
 
   return commonConfig
 }

@@ -1,18 +1,19 @@
 {
-  "name": "The-Scream-1893",
-  "version": "0.0.1",
+  "name": "KhovsgoL",
+  "version": "0.0.2",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/migalooo/The-Scream-1893.git"
+    "url": "https://github.com/migalooo/KhovsgoL.git"
   },
-  "description": "The study of the soul, that is to say the study of my own self.",
+  "description": "It might snow. They can smell it, so they're excited.",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config compiler/webpack.dev.config.js",
     "start": "npm run dev",
     "pre": "NODE_ENV=preproduction node compiler/buildEntry.js",
-    "build": "NODE_ENV=production node compiler/buildEntry.js"
+    "build": "NODE_ENV=production node compiler/buildEntry.js",
+    "static": "node compiler/buildStaticLibrary.js"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.3",

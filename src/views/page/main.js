@@ -1,5 +1,8 @@
+import $ from 'selector'
 import '>/assets/css/reset.css'
 import './private.less'
 import say from './private.js'
 
-say('I sensed an infinite scream passing through nature.')
+$('#insert').innerText = 'Khövsgöl Nuur'
+
+say('I sensed an spirit passing through nature.')

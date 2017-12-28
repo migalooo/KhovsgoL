@@ -14,10 +14,10 @@ module.exports.createNotifierCallback = function () {
     const error = errors[0]
     const filename = error.file && error.file.split('!').pop()
     notifier.notify({
-      title: '',
+      title: 'KhovsgoL',
       message: severity + ': ' + error.name,
       subtitle: error.file || '',
-      icon: path.join(__dirname, 'The-Cream-icon.png')
+      icon: path.join(__dirname, 'terminal-icon.png')
     })
   }
   function formattedHtmlHbsErrors(errs) {

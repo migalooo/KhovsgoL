@@ -2,6 +2,7 @@
 const fs = require('fs')
 const path = require('path')
 const { addStyleLoaders } = require('./utils/addStyleLoaders.js')
+const addVueLoader = require('./utils/addVueLoader.js')
 
 function resolve () {
   return path.join(__dirname, '..', ...arguments)
@@ -31,6 +32,11 @@ module.exports = function webpackCommon(ENV) {
           test: /\.js$/,
           loader: 'babel-loader',
           include: [resolve('src')]
+        },
+        {
+          test: /\.vue$/,
+          loader: 'vue-loader',
+          options: addVueLoader(ENV)
         },
         {
           test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

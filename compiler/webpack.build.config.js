@@ -13,36 +13,36 @@ const addMutiPageEntries = require('./utils/addMutiPageEntries.js')
 const getEnvrionmentConfig = require('./utils/getEnvrionmentConfig.js')
 const createNotifierCallback = require('./utils/createNotifierCallback.js')
 
-const config = getEnvrionmentConfig()
+const ENV = getEnvrionmentConfig()
 
-const buildConfig = webpackMerge(webpackCommon(config), {
+const buildConfig = webpackMerge(webpackCommon(ENV), {
   entry: {},
   output: {
-    path: config.assetsRoot,
-    publicPath: config.assetsPublic, 
-    filename: path.join(config.assetsSubDirectory, '[name].[chunkhash].js'),
-    chunkFilename: path.join(config.assetsSubDirectory, '[id].[chunkhash].js')
+    path: ENV.assetsRoot,
+    publicPath: ENV.assetsPublic, 
+    filename: path.join(ENV.assetsSubDirectory, '[name].[chunkhash].js'),
+    chunkFilename: path.join(ENV.assetsSubDirectory, '[id].[chunkhash].js')
   },
   plugins: [
     new webpack.DefinePlugin({
-      'NODE_ENV': JSON.stringify(config.env)
+      'NODE_ENV': JSON.stringify(ENV.env)
       // e.g. 'SERVICE_URL': JSON.stringify("http://production.example.com")
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
       },
-      sourceMap: config.sourceMap,
+      sourceMap: !!ENV.devtool,
       parallel: true
     }),
     // Extract css into its own file
     new ExtractTextPlugin({
-      filename: path.posix.join(config.assetsSubDirectory, 'css/[name].[contenthash].css'),
+      filename: path.posix.join(ENV.assetsSubDirectory, 'css/[name].[contenthash].css'),
       allChunks: false,
     }),
     // Compress extracted CSS
     new OptimizeCSSPlugin({
-      cssProcessorOptions: config.sourceMap
+      cssProcessorOptions: ENV.cssSourceMap
       ? { safe: true, map: { inline: false } }
       : { safe: true }
     }),
@@ -82,8 +82,8 @@ const buildConfig = webpackMerge(webpackCommon(config), {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '../static'),
-        to: config.staticSubDirectory,
-        ignore: ['.*']
+        to: ENV.staticSubDirectory,
+        ignore: ['config.js']
       }
     ])
   ]
@@ -91,7 +91,7 @@ const buildConfig = webpackMerge(webpackCommon(config), {
 
 
 // Add muti page HtmlWebpackPlugin config
-const {entry, folderNames, inactiveNames} = addMutiPageEntries(config)
+const {entry, folderNames, inactiveNames} = addMutiPageEntries(ENV)
 Object.assign(buildConfig.entry, entry)
 folderNames.forEach((folderName, i) => {
   buildConfig.plugins.push( new HtmlWebpackPlugin(
@@ -109,7 +109,7 @@ folderNames.forEach((folderName, i) => {
   ))
 })
 
-if (config.gzip) {
+if (ENV.gzip) {
   const CompressionWebpackPlugin = require('compression-webpack-plugin')
 
   buildConfig.plugins.push(
@@ -118,7 +118,7 @@ if (config.gzip) {
       algorithm: 'gzip',
       test: new RegExp(
         '\\.(' +
-        config.gzipExtensions.join('|') +
+        ENV.gzipExtensions.join('|') +
         ')$'
       ),
       threshold: 10240,
@@ -127,7 +127,7 @@ if (config.gzip) {
   )
 }
 
-if (config.bundleAnalyze) {
+if (ENV.bundleAnalyze) {
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   buildConfig.plugins.push(new BundleAnalyzerPlugin())
 }

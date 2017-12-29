@@ -58,7 +58,7 @@ module.exports = {
       views: []
     }, 
     // enable Gzip
-    gzip: true,
+    gzip: false,
     gzipExtensions: ['js', 'css'],
     // report bundle analyze
     bundleAnalyze: false 
@@ -78,7 +78,7 @@ module.exports = {
     // Js source map
     devtool: false,
     // style source map
-    cssSourceMap: true, 
+    cssSourceMap: false, 
     // use postCss
     usePostCSS: true,
     // compiler page array

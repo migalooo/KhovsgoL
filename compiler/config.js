@@ -78,7 +78,7 @@ module.exports = {
     // Js source map
     devtool: false,
     // style source map
-    cssSourceMap: true, 
+    cssSourceMap: false, 
     // use postCss
     usePostCSS: true,
     // compiler page array

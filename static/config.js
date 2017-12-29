@@ -8,6 +8,7 @@ module.exports = {
   library: [
     // library-file-name: global-variable
     // note: global-variable in import will be change to lowercase
-    { 'library.js': 'selector' }
+    { 'vue-v2.5.13.min.js': 'Vue' },
+    { 'axios-v0.17.1.min.js': 'axios' }
   ]
 }

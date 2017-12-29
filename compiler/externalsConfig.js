@@ -1,3 +1,4 @@
 module.exports = {
-  selector: 'window.selector',
+  vue: 'window.Vue',
+  axios: 'window.axios',
 }

@@ -23,7 +23,6 @@ const buildConfig = webpackMerge(webpackCommon(config), {
     filename: path.join(config.assetsSubDirectory, '[name].[chunkhash].js'),
     chunkFilename: path.join(config.assetsSubDirectory, '[id].[chunkhash].js')
   },
-  devtool: config.sourceMap ? config.devtool : false,
   plugins: [
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(config.env)

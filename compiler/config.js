@@ -31,7 +31,7 @@ module.exports = {
     // compiler muti page entries array
     compilerViews: {
       all : true, // compile all folders under /src/views/ to pages
-      views: ['index'] // case all:false, compile selected folders in views array to pages
+      views: ['page'] // set all:false, compile selected folders in views array to pages
     } 
   },
 
@@ -47,14 +47,15 @@ module.exports = {
     assetsPublic: '/',
     staticSubDirectory: 'static',
     // Js source map
-    sourceMap: true,
     devtool: '#source-map',
+    // style source map
+    cssSourceMap: true, 
     // use postCss
     usePostCSS: true,
     // compiler page array
     compilerViews: {
       all : true,
-      views: ['index']
+      views: []
     }, 
     // enable Gzip
     gzip: true,
@@ -75,14 +76,15 @@ module.exports = {
     assetsPublic: '/',
     staticSubDirectory: 'static',
     // Js source map
-    sourceMap: false,
-    devtool: '#source-map',
+    devtool: false,
+    // style source map
+    cssSourceMap: true, 
     // use postCss
     usePostCSS: true,
     // compiler page array
     compilerViews: {
       all : true,
-      views: ['index']
+      views: []
     }, 
     // enable Gzip
     gzip: false,

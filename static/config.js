@@ -1,6 +1,6 @@
 'use strict'
 /**
- * Set alias name of library
+ * Set externals name of library
  */
 module.exports = {
   // src attribute of script tag 

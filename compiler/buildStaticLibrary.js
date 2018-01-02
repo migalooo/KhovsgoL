@@ -37,7 +37,7 @@ function saveFile(filePath, data) {
  * result file will put in /src/snippets
  */
 let contentHbs = '', pathHbs
-pathHbs = path.resolve(__dirname, '../src/snippets') + '/meta.static.hbs'
+pathHbs = path.resolve(__dirname, '../src/snippets') + '/script.static.hbs'
 insertLibraries.forEach(lib => contentHbs += `<script src="${src+Object.keys(lib)[0]}"></script>\n`)
 saveFile(pathHbs, contentHbs)
 

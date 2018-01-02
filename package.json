@@ -58,8 +58,7 @@
     "yarn": ">= 1.0.0"
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
+    "Android > 4.3",
+    "iOS > 8.1"
   ]
 }

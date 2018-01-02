@@ -1,5 +1,3 @@
-import '>/assets/css/reset.css'
-
 import vue from 'vue'
 import axios from 'axios'
 import App from './components/App.vue'

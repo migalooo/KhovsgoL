@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Store from '../../../store.js'
+import Store from '>/store.js'
 export default {
   name: 'app',
   mounted() {
@@ -72,6 +72,9 @@ export default {
 input {
   box-shadow: 0 0 8px rgb(150, 104, 219);
   border: none;
+  width: 100%;
+  height: 1rem;
+  display: flex;
 }
 ul{
   display: flex;

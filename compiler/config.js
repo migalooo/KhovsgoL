@@ -58,7 +58,7 @@ module.exports = {
       views: []
     }, 
     // enable Gzip
-    gzip: true,
+    gzip: false,
     gzipExtensions: ['js', 'css'],
     // report bundle analyze
     bundleAnalyze: false 

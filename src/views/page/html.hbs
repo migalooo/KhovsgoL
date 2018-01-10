@@ -2,21 +2,13 @@
 <html>
   <head>
     <!-- inject html template -->
-    {{> meta.desktop.hbs }}
+    {{> meta.mobile.hbs }}
     <title>meet nomadic</title>
     {{> style.reset.hbs }}
     {{> style.rem.hbs }}
   </head>
   <body>
-    <div id="app">
-      <h1>Meet Nomadic</h1>
-      <div class="painter">
-      </div>
-      <div class="describ">
-        <p>Lake Khövsgöl (Mongolian: Хөвсгөл нуур, Höwsgöl núr; classic script:Kobsogol naghur, köbsügül naɣur), also referred to as Khövsgöl dalai (Хөвсгөл далай, Höwsgöl dalai; Khövsgöl ocean) or Dalai Eej (Далай ээж, Dalai éj; ocean mother), is the largest fresh water lake in Mongolia by volume and second largest by area. Khövsgöl Nuur is nicknamed "Younger sister of the Sister Lakes (Lake Khövsgöl and Lake Baikal)".</p>
-        <p id="insert"></p>
-      </div>
-    </div>
+    <div id="app"></div>
     {{> script.static.hbs }}
   </body>
 </html>

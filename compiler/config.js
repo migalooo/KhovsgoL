@@ -13,7 +13,15 @@ module.exports = {
     assetsSubDirectory: 'assets',
     staticSubDirectory: 'static', // copy dirname in assetsRoot for libraries in "/static/" folder
     // proxy
-    proxyTable: {},
+    proxyTable: {
+      // '/api': {
+      //   target: 'http://api.server.com:port',
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/api': '/list'
+      //   }
+      // }
+    },
     // dev server settings 
     host: 'localhost', // overwritten process.env.HOST
     port: 8080, // overwritten process.env.PORT

@@ -3,7 +3,7 @@ import axios from 'axios'
 import App from './fragments/App.vue'
 import './main.css'
 
-import comp from './components.js'
+// import Toast from '>/components/toast/alert.js'
 
 /**
  * Ajax bind to this.$http

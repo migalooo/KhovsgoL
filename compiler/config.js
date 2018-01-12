@@ -35,7 +35,7 @@ module.exports = {
     // style source map
     cssSourceMap: true, 
     // use postCss
-    usePostCSS: false,
+    usePostCSS: true,
     // compiler muti page entries array
     compilerViews: {
       all : true, // compile all folders under /src/views/ to pages

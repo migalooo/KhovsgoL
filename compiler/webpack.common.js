@@ -12,9 +12,9 @@ module.exports = function webpackCommon(ENV) {
   const commonConfig = {
     context: path.resolve(__dirname, '../'),
     resolve: {
-      extensions: ['.js', '.json', '.hbs'],
+      extensions: ['.vue', '.js', '.json', '.hbs'],
       alias: {
-        '>': resolve('src'),
+        '>': resolve('src')
       }
     },
     externals: {},

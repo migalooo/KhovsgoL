@@ -1,18 +1,21 @@
 /**
  * Browser config in package.json file
  */
+const path = require('path')
 module.exports = {
   "plugins": {
     "postcss-import": {},
-    "autoprefixer": {},
     "postcss-pxtorem": {
       rootValue: 100,
       unitPrecision: 5,
       propList: ['*', '!border*'],
-      selectorBlackList: [],
+      selectorBlackList: ['hairline'],
       replace: true,
       mediaQuery: false,
       minPixelValue: 0
-    }
+    },
+    "postcss-bem": {},
+    "postcss-nested": {},
+    "autoprefixer": {}
   }
 }

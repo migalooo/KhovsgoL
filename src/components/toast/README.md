@@ -1,0 +1,6 @@
+## Toast
+
+``` javascript
+toast
+```
+

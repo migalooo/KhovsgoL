@@ -3,7 +3,10 @@ import axios from 'axios'
 import App from './fragments/App.vue'
 import './main.css'
 
-// import Toast from '>/components/toast/alert.js'
+// Global components
+import toast from '>/components/toast/index.js'
+// import toast from '>/components/tost/toast.js'
+vue.use(toast, {})
 
 /**
  * Ajax bind to this.$http

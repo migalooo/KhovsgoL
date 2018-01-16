@@ -1,9 +1,6 @@
 <template>
   <div id="app">
     <span class="info">{{ message }}</span>
-    <div class="toast">
-      hello
-    </div>
     <item></item>
     <div class="hair hairline">
       border
@@ -14,7 +11,6 @@
 
 <script>
 import Item from "./Item.vue"
-import Toast from ">/components/toast/alert.js"
 export default {
   components: {
     Item
@@ -24,24 +20,9 @@ export default {
       message: 'hello!'
     }
   },
-  created () {
-/**
-setTimeout(()=>{
-  this.$toast.show({
-    text: 'info',
-    position: 'bottom'
-  })
-  console.log('log')
-}, 3000)
-*/
-  },
   methods: {
     b(){
-      Toast({
-        message : "有位置的设定和时间设定",
-        position: 'bottom',
-        duration : 1000 })
-      console.log('toast')
+    this.$toast('com')
     }
   }
 }

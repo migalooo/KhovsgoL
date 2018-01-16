@@ -1,1 +1,6 @@
+/*Root rem set*/
+@import '../../assets/css/rem.css';
+/*Reset style*/
+@import '../../assets/css/reset.css';
+/*Hairline style*/
 @import '../../assets/css/hairline.css';

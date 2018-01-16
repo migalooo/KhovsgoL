@@ -1,6 +1,0 @@
-## Toast
-
-``` javascript
-toast
-```
-

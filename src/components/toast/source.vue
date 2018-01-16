@@ -1,6 +1,6 @@
 <template>
   <transition name="snnu-toast-pop">
-  <div class="snnu-toast" v-show="visible" :class="customClass" :style="{ 'padding': iconClass === '' ? '10px' : '20px' }">
+  <div class="snnu-toast" v-show="visible" :class="customClass" :style="{ 'padding': iconClass === '' ? '10px 15px' : '20px 15px' }">
     <i class="snnu-toast-icon" :class="iconClass" v-if="iconClass !== ''"></i>
     <span class="snnu-toast-text" :style="{ 'padding-top': iconClass === '' ? '0' : '10px' }">{{ message }}</span>
   </div>
@@ -34,16 +34,15 @@ export default {
       var classes = []
       switch (this.position) {
         case 'top':
-          classes.push('is-placetop')
+          classes.push('snnu-toast-top')
           break
-        case 'bottom':
-          classes.push('is-placebottom')
+        case 'middle':
+          classes.push('snnu-toast-middle')
           break
         default:
-          classes.push('is-placemiddle')
+          classes.push('snnu-toast-bottom')
       }
       classes.push(this.className)
-
       return classes.join(' ')
     }
   }
@@ -51,51 +50,43 @@ export default {
 </script>
 
 <style>
-@component-namespace snnu {
-  @component toast {
-    position: fixed;
-    max-width: 80%;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    box-sizing: border-box;
-    text-align: center;
-    z-index: 1000;
-    transition: opacity .3s linear;
-
-    @descendent icon {
-      display: block;
-      text-align: center;
-      font-size: 56px;
-    }
-
-    @descendent text {
-      font-size: 14px;
-      display: block;
-      text-align: center;
-    }
-
-    @when placetop {
-      top: 50px;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-
-    @when placemiddle {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    @when placebottom {
-      bottom: 50px;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-
-    @descendent pop-enter, pop-leave-active {
-      opacity: 0;
-    }
-  }
+.snnu-toast {
+  position: fixed;
+  max-width: 80%;
+  border-radius: 5px;
+  background: rgba(50, 50, 50, .9);
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 1000;
+  transition: opacity .3s linear;
+}
+.snnu-toast-icon {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+}
+.snnu-toast-text {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+.snnu-toast-top {
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.snnu-toast-middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.snnu-toast-bottom {
+  bottom: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.snnu-toast-pop-enter, .snnu-toast-pop-leave-active{
+  opacity: 0;
 }
 </style>

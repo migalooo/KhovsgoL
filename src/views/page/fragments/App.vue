@@ -5,7 +5,7 @@
     <div class="hair hairline">
       border
     </div>
-    <button @click='b'>点击2</button>
+    <button @click='show'>点击2</button>
   </div>
 </template>
 
@@ -21,8 +21,8 @@ export default {
     }
   },
   methods: {
-    b(){
-    this.$toast('com')
+    show(){
+      this.$toast('了一个请求错误')
     }
   }
 }
@@ -33,7 +33,7 @@ export default {
     width: 100%;
     height: 750px;
     display: block;
-    background: #000;
+    background: #f9f9f9;
   }  
   .block{
     margin-top: 20px;

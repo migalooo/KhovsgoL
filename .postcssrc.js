@@ -14,8 +14,6 @@ module.exports = {
       mediaQuery: false,
       minPixelValue: 0
     },
-    "postcss-bem": {},
-    "postcss-nested": {},
     "autoprefixer": {}
   }
 }

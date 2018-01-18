@@ -1,8 +1,8 @@
-.hairline-top,.hairline-bottom,.hairline-left,.hairline-right,.hairline{
+.snnu-hairline-top,.snnu-hairline-bottom,.snnu-hairline-left,.snnu-hairline-right,.snnu-hairline{
 	position: relative;
 }
 
-.hairline-top:before,.hairline-bottom:after {
+.snnu-hairline-top:before,.snnu-hairline-bottom:after {
 	pointer-events: none;
 	position: absolute;
 	content: "";
@@ -12,15 +12,15 @@
 	right: 0;
 }
 
-.hairline-top:before {
+.snnu-hairline-top:before {
 	top: 0;
 }
 
-.hairline-bottom:after {
+.snnu-hairline-bottom:after {
 	bottom: 0;
 }
 
-.hairline-left:before,.hairline-right:after {
+.snnu-hairline-left:before,.snnu-hairline-right:after {
 	pointer-events: none;
 	position: absolute;
 	content: "";
@@ -30,15 +30,15 @@
 	bottom: 0;
 }
 
-.hairline-left:before {
+.snnu-hairline-left:before {
 	left: 0;
 }
 
-.hairline-right:after {
+.snnu-hairline-right:after {
 	right: 0;
 }
 
-.hairline:after {
+.snnu-hairline:after {
 	position: absolute;
 	content: "";
 	top: 0;
@@ -51,33 +51,33 @@
 }
 
 @media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5),(min-resolution: 144dpi),(min-resolution:1.5dppx) {
-	.hairline-top:before,.hairline-bottom:after {
+	.snnu-hairline-top:before,.snnu-hairline-bottom:after {
 		transform: scaleY(.5)
 	}
-	.hairline-left:before,.hairline-right:after {
+	.snnu-hairline-left:before,.snnu-hairline-right:after {
 		transform: scaleX(.5)
 	}
-	.hairline:after {
+	.snnu-hairline:after {
 		width: 200%;
 		height: 200%;
 		transform: scale(.5)
 	}
-	.hairline-top:before,.hairline-left:before,.hairline:after {
+	.snnu-hairline-top:before,.snnu-hairline-left:before,.snnu-hairline:after {
 		transform-origin: 0 0
 	}
-	.hairline-bottom:after,.hairline-right:after {
+	.snnu-hairline-bottom:after,.snnu-hairline-right:after {
 		transform-origin: 100% 100%
 	}
 }
 
 @media (-webkit-device-pixel-ratio:1.5) {
-	.hairline-top:before,.hairline-bottom:after {
+	.snnu-hairline-top:before,.snnu-hairline-bottom:after {
 		transform: scaleY(.6666)
 	}
-	.hairline-left:before,.hairline-right:after {
+	.snnu-hairline-left:before,.snnu-hairline-right:after {
 		transform: scaleX(.6666)
 	}
-	.hairline:after {
+	.snnu-hairline:after {
 		width: 150%;
 		height: 150%;
 		transform: scale(.6666)
@@ -85,13 +85,13 @@
 }
 
 @media (-webkit-device-pixel-ratio:3) {
-	.hairline-top:before,.hairline-bottom:after {
+	.snnu-hairline-top:before,.snnu-hairline-bottom:after {
 		transform: scaleY(.3333)
 	}
-	.hairline-left:before,.hairline-right:after {
+	.snnu-hairline-left:before,.snnu-hairline-right:after {
 		transform: scaleX(.3333)
 	}
-	.hairline:after {
+	.snnu-hairline:after {
 		width: 300%;
 		height: 300%;
 		transform: scale(.3333)

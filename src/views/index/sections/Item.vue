@@ -13,8 +13,6 @@
 <script>
 export default {
   created () {
-    console.log('item')
-    //就当看作是ajax在初始化进入的时候从后台获取的用户列表数据
     this.memberList = [
       {custName : "ziksang1",age:20,joinTime : "2014-01-02",custId:1},
       {custName : "ziksang2",age:21,joinTime : "2014-01-03",custId:2},

@@ -2,10 +2,7 @@
   <div id="app">
     <span class="info">{{ message }}</span>
     <item></item>
-    <div class="hair hairline">
-      border
-    </div>
-    <button @click='show'>点击2</button>
+    <button @click='show'>Toast</button>
   </div>
 </template>
 
@@ -22,7 +19,7 @@ export default {
   },
   methods: {
     show(){
-      this.$toast('了一个请求错误')
+      this.$toast('Message Toast')
     }
   }
 }

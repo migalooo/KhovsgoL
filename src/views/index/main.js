@@ -1,7 +1,7 @@
 import vue from 'vue'
 import axios from 'axios'
 
-import App from './fragments/App.vue'
+import App from './sections/App.vue'
 import './main.css'
 /**
  * Global components

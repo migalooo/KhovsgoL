@@ -32,7 +32,7 @@
   font-family: Arial;
   color: #333;
   box-shadow: 0 0 30px;
-  transition: .2s;
+  transition: all .2s ease-in-out;
 }
 
 .snnu-modal-header {
@@ -86,6 +86,6 @@
 
 .snnu-modal-bounce-enter {
   opacity: 0;
-  transform: translate3d(-50%, -50%, 0) scale(0.7);
+  transform: translate3d(-50%, -50%, 0) scale(0.9);
 }
 </style>

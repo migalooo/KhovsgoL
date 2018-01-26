@@ -9,7 +9,7 @@
   },
   "description": "It might snow. They can smell it, so they're excited.",
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config compiler/webpack.dev.config.js",
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config compiler/webpack.dev.config.js",
     "start": "npm run dev",
     "pre": "NODE_ENV=preproduction node compiler/buildEntry.js",
     "build": "NODE_ENV=production node compiler/buildEntry.js",

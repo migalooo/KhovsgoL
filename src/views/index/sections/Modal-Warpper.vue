@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-warpper" v-if="modalShow" @touchmove=function(e){e.preventDefault}>
+  <div class="modal-warpper" v-if="modalShow" @touchmove.prevent>
     <Modal v-if="promptModal">
       <div slot="body">
         用户可以每天领取50元的提额锦囊，每天只能领取1次
@@ -9,9 +9,7 @@
       </div>
     </Modal>
     <!-- bottom mask -->
-    <transition name="modal-mask" appear>
-    <div class="modal-mask" v-if="modalShow"></div>
-    </transition>
+    <div class="modal-mask"></div>
   </div>
 </template>
 
@@ -44,18 +42,11 @@ export default {
 <style>
 .modal-mask {
   position: fixed;
+  display: block;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,.6);
-}
-
-.modal-mask-enter-active {
-  transition: opacity .2s;
-}
-
-.modal-mask-enter {
-  opacity: 0;
+  background-color: rgba(0,0,0,.6);
 }
 </style>

@@ -28,12 +28,12 @@ export default {
   methods : {
     memberDetail (index) {
       console.log(index)
-         }
-     }
+    }
+  }
 }
 </script>
 <style>
-ul{
+ul {
   font-size: 60px;
 }
 </style>

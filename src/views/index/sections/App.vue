@@ -20,6 +20,7 @@ export default {
   methods: {
     show(){
       this.$toast('Message Toast')
+      window.bus.$emit('showPromprtModal')
     }
   }
 }

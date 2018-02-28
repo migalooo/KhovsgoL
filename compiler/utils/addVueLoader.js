@@ -1,4 +1,5 @@
 'use strict'
+const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 function cssLoaders(options) {
@@ -7,7 +8,8 @@ function cssLoaders(options) {
   const cssLoader = {
     loader: 'css-loader',
     options: {
-      sourceMap: options.sourceMap
+      sourceMap: options.sourceMap,
+      root: path.resolve(__dirname, '../../src/assets')
     }
   }
 

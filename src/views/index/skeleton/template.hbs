@@ -1,0 +1,43 @@
+<div class="snnu-skeleton" id="snnu_skeleton">
+  <div class="snnu-font-logo">
+    <span>苏</span><span>宁</span><span>金</span><span>融</span>
+  </div>
+  <span class="greybar words"></span>
+  <span class="greybar words"></span>
+  <div class="row-warp">
+    <span class="greybar square"></span>
+    <span class="greybar square"></span>
+    <span class="greybar square"></span>
+  </div>
+  <div class="list-warp">
+    <span class="greybar words"></span><span class="greybar button"></span>
+  </div>
+  <div class="list-warp">
+    <span class="greybar words"></span><span class="greybar button"></span>
+  </div>
+  <div class="list-warp">
+    <span class="greybar words"></span><span class="greybar button"></span>
+  </div>
+</div>
+
+<script id="snnu_skeleton_script">
+// Disable page scroll before skeleton removed
+document.querySelector('.snnu-skeleton').addEventListener("touchmove",function(e){
+  e.preventDefault()
+})
+
+// Register snnu-skeleton removed event when window onload 
+window.addEventListener('load', function rmSkeleton() {
+  document.querySelector('#snnu_skeleton').classList.add('snnu-skeleton-fade')
+  function rmNode(el) {
+    var NODE = document.querySelector(el)
+    NODE.parentNode.removeChild(NODE)
+  }
+  setTimeout(function(){
+    rmNode('#snnu_skeleton')
+    rmNode('#snnu_skeleton_style')
+    rmNode('#snnu_skeleton_script')
+    window.removeEventListener('load', rmSkeleton)
+  }, 300)
+})
+</script>

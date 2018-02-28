@@ -1,17 +1,20 @@
 <template>
   <transition name="snnu-modal-bounce">
-  <div class="snnu-modal">
-    <div class="snnu-modal-header" v-if="title !== ''">
-      <div class="snnu-modal-title">
-        <slot name="header"></slot>
+  <div>
+    <div class="snnu-modal">
+      <div class="snnu-modal-header" v-if="title !== ''">
+        <div class="snnu-modal-title">
+          <slot name="header"></slot>
+        </div>
+      </div>
+      <div class="snnu-modal-body" v-if="message !== ''">
+        <slot name="body"></slot>
+      </div>
+      <div class="snnu-modal-footer">
+        <slot name="footer"></slot>
       </div>
     </div>
-    <div class="snnu-modal-body" v-if="message !== ''">
-      <slot name="body"></slot>
-    </div>
-    <div class="snnu-modal-footer">
-      <slot name="footer"></slot>
-    </div>
+    <div class="snnu-modal-mask"></div>
   </div>
   </transition>
 </template>
@@ -32,7 +35,7 @@
   font-family: Arial;
   color: #333;
   box-shadow: 0 0 30px;
-  transition: all .2s ease-in-out;
+  transition: all .2s ease-in;
 }
 
 .snnu-modal-header {
@@ -62,6 +65,18 @@
   }
 }
 
+.snnu-modal-mask {
+  position: fixed;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .6;
+  background-color: #000;
+  transition: opacity .2s ease-in;
+}
+
 .snnu-modal-btn {
   line-height: 85px;
   display: block;
@@ -84,8 +99,11 @@
   color: #3399FF;
 }
 
-.snnu-modal-bounce-enter {
-  opacity: 0;
+.snnu-modal-bounce-enter .snnu-modal{
   transform: translate3d(-50%, -50%, 0) scale(0.9);
+}
+
+.snnu-modal-bounce-enter .snnu-modal-mask{
+  opacity: 0;
 }
 </style>

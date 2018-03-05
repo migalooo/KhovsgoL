@@ -65,6 +65,8 @@ module.exports = {
       all : true,
       views: []
     }, 
+    // commons chunk switcher
+    chunks: false,
     // enable Gzip
     gzip: false,
     gzipExtensions: ['js', 'css'],
@@ -94,6 +96,8 @@ module.exports = {
       all : true,
       views: []
     }, 
+    // commons chunk switcher
+    chunks: false,
     // enable Gzip
     gzip: false,
     gzipExtensions: ['js', 'css'],

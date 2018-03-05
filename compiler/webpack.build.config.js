@@ -50,6 +50,20 @@ const buildConfig = webpackMerge(webpackCommon(ENV), {
     new webpack.HashedModuleIdsPlugin(),
     // Scope hoisting
     new webpack.optimize.ModuleConcatenationPlugin(),
+    // copy custom static assets
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        to: ENV.staticSubDirectory,
+        ignore: ['config.js']
+      }
+    ])
+  ]
+})
+
+// Merge all js in a single file
+if (ENV.chunks) {
+  buildConfig.plugins.push(
     // Split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
@@ -77,18 +91,8 @@ const buildConfig = webpackMerge(webpackCommon(ENV), {
       children: true,
       minChunks: 3
     }),
-
-    // copy custom static assets
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, '../static'),
-        to: ENV.staticSubDirectory,
-        ignore: ['config.js']
-      }
-    ])
-  ]
-})
-
+  )
+}
 
 // Add muti page HtmlWebpackPlugin config
 const {entry, folderNames, inactiveNames} = addMutiPageEntries(ENV)

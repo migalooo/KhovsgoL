@@ -14,13 +14,13 @@ module.exports = {
     staticSubDirectory: 'static', // copy dirname in assetsRoot for libraries in "/static/" folder
     // proxy
     proxyTable: {
-      // '/api': {
-      //   target: 'http://api.server.com:port',
-      //   changeOrigin: true,
-      //   pathRewrite: {
-      //     '^/api': '/list'
-      //   }
-      // }
+      '/api': {
+        target: 'http://47.100.113.105:7311',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/17093676'
+        }
+      }
     },
     // dev server settings 
     host: 'localhost', // overwritten process.env.HOST

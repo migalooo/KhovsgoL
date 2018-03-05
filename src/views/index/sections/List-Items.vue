@@ -14,9 +14,7 @@ export default {
     list: Object
   },
   methods: {
-    receiveQuota(e) {
-      if (document.querySelector('.throttle')) return
-//      this.$emit('toggleThrottle', true)
+    receiveQuota: function(e) {
       window.bus.$emit('showPromprtModal')
     }
   }

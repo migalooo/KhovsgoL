@@ -80,26 +80,38 @@
 .snnu-modal-btn {
   line-height: 85px;
   display: block;
-  background-color: #fff;
   flex: 1;
-  margin: 0;
   padding: 0;
   border: 0;
-  width: 100%;
   font-size: 34px;
   &:focus {
     outline: none;
   }
+}
+
+.snnu-modal-btn-white {
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  color: #3399FF;
   &:active {
     background-color: #fff;
   }
 }
 
 .snnu-modal-btn-blue {
-  color: #3399FF;
+  background-color: #39f;
+  color: #fff;
+  width: 86%;
+  margin: 0 auto .35rem;
+  border-radius: 5px;
+  &:active {
+    background-color: #6af;
+  }
 }
 
 .snnu-modal-bounce-enter .snnu-modal{
+  opacity: 0;
   transform: translate3d(-50%, -50%, 0) scale(0.9);
 }
 

@@ -14,7 +14,7 @@ vue.use(toast)
 /**
  * Ajax bind to this.$http
  */
-axios.defaults.timeout = 2500 
+axios.defaults.timeout = 3000 
 axios.interceptors.response.use(function (response) {
     return response
   }, function (error) {

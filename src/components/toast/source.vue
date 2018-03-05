@@ -54,7 +54,7 @@ export default {
   position: fixed;
   max-width: 80%;
   border-radius: 5px;
-  background: rgba(50, 50, 50, .9);
+  background: rgba(50, 50, 50, .7);
   color: #fff;
   box-sizing: border-box;
   text-align: center;
@@ -67,7 +67,8 @@ export default {
   font-size: 40px;
 }
 .snnu-toast-text {
-  font-size: 40px;
+  font-family: Arial;
+  font-size: 30px;
   display: block;
   text-align: center;
 }

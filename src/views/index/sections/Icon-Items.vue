@@ -12,9 +12,7 @@ export default {
     icon: Object
   },
   methods: {
-    increaseLimit(e) {
-      if (document.querySelector('.throttle') || !this.icon.count ) return
-      //this.$emit('toggleThrottle', true)
+    increaseLimit: function(e) {
       window.bus.$emit('showPromprtModal')
     }
   }
@@ -32,7 +30,7 @@ export default {
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom: 40px;
+    bottom: 35px;
   }
   &.disabled{
     opacity: .3;
